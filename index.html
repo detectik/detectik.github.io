@@ -36,6 +36,22 @@
       border-bottom: 1px solid var(--border);
       padding: 0.9rem 0;
     }
+
+/* Estilos para controlar las medidas de la imagen */
+.nav-logo {
+  width: 150px;      /* Define el ancho que desees */
+  height: auto;       /* Mantiene la proporción original para que no se deforme */
+  display: block;    /* Evita espacios en blanco innecesarios debajo de la imagen */
+}
+
+/* Opcional: Centrar los elementos verticalmente dentro del nav */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Separa el logo del menú */
+  padding: 10px 20px;
+}
+
     nav .container { display: flex; justify-content: space-between; align-items: center; }
     .logo-text { font-weight: 800; font-size: 1.35rem; letter-spacing: -0.03em; }
     .nav-links { display: flex; gap: 1.5rem; font-size: 0.9rem; color: var(--gray); }
@@ -294,7 +310,8 @@
 
 <nav>
   <div class="container">
-    <a href="#" class="logo-text">detectik</a>
+<img src="hero/logo.png" alt="Logo de Detectik" class="nav-logo">
+    <a href="#" class="logo-text">Detectik</a>
     <div class="nav-links">
       <a href="#servicios">Servicios</a>
       <a href="#experiencia">Experiencia</a>
