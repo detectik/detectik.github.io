@@ -41,16 +41,12 @@
 .nav-logo {
   width: 45px;      /* Define el ancho que desees */
   height: auto;       /* Mantiene la proporción original para que no se deforme */
-  margin-left: auto;    
+  display: block;    /* Evita espacios en blanco innecesarios debajo de la imagen */
 }
 
 /* Opcional: Centrar los elementos verticalmente dentro del nav */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Separa el logo del menú */
-  padding: 10px 20px;
-}
+.navbar { display: flex; space-between; align-items: left; justify-content: space-between; padding: 10px 20px; }
+  
 
     nav .container { display: flex; justify-content: space-between; align-items: center; }
     .logo-text { font-weight: 800; font-size: 1.35rem; letter-spacing: -0.03em; }
