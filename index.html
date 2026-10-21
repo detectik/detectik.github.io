@@ -21,7 +21,7 @@
     <a class="brand" href="#inicio" aria-label="Detectik, inicio"><img src="assets/logo-detectik-oscuro.png" alt="Detectik"></a>
     <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
     <nav class="nav" aria-label="Navegación principal">
-      <a href="#servicios">Servicios</a><a href="#planes">Planes</a><a href="#metodo">Método</a><a href="#sobre">Sobre Detectik</a>
+      <a href="#servicios">Servicios</a><a href="#guias-ti">Ayuda TI</a><a href="#planes">Planes</a><a href="#metodo">Método</a><a href="#sobre">Sobre Detectik</a>
       <a class="nav-cta" href="#contacto">Hablemos <span>↗</span></a>
     </nav>
   </header>
@@ -62,8 +62,34 @@
       </div>
     </section>
 
+    <section class="help-center section-wrap" id="guias-ti">
+      <div class="section-heading"><div><div class="section-kicker">03 / CENTRO DE AYUDA</div><h2>Primero, respira.<br><span>Vamos paso a paso.</span></h2></div><p>Guías claras para resolver los problemas TI más comunes. Sin tecnicismos y a tu ritmo.</p></div>
+      <div class="help-intro"><span class="help-live"><i></i> GUÍAS AUTÓNOMAS · SIN REGISTRO</span><p>Elige tu problema para ver instrucciones detalladas o usa el asistente guiado. No necesitas compartir contraseñas, códigos de verificación ni datos bancarios.</p></div>
+      <div class="help-grid">
+        <article class="help-card"><div class="help-card-top"><span class="help-icon">⌁</span><span>GUÍA 01</span></div><h3>No puedo entrar a mi cuenta</h3><p>Contraseña olvidada, cuenta bloqueada o código que no llega.</p><a class="help-start" href="#asistente-ti" data-guide="cuentas">Guiarme con el asistente <span>↗</span></a>
+          <details class="help-details"><summary>Ver todos los pasos</summary><ol><li>Comprueba que estás en la página o aplicación oficial. No abras enlaces de mensajes inesperados.</li><li>Revisa que el correo o nombre de usuario esté escrito correctamente y que no haya activado Bloq Mayús.</li><li>Selecciona <strong>“Olvidé mi contraseña”</strong> en el sitio oficial del servicio.</li><li>Usa el método de recuperación que configuraste. Revisa spam si esperas un correo; nunca compartas el código recibido.</li><li>Si no llega el código, confirma que el teléfono o correo de recuperación siga siendo tuyo y espera antes de pedir otro.</li><li>Si sospechas que alguien entró a tu cuenta, recupérala desde el sitio oficial, cambia la contraseña por una única y activa la verificación en dos pasos.</li><li>Si la cuenta sigue bloqueada, utiliza el soporte oficial del proveedor. En cuentas de trabajo, contacta al administrador.</li></ol><p class="help-warning">Nunca envíes tu contraseña, códigos de recuperación ni documentos de identidad por chat a quien diga ser soporte.</p></details>
+        </article>
+        <article class="help-card"><div class="help-card-top"><span class="help-icon">⌁</span><span>GUÍA 02</span></div><h3>Internet lento o sin conexión</h3><p>Wi-Fi conectado sin internet, cortes o páginas que no cargan.</p><a class="help-start" href="#asistente-ti" data-guide="internet">Guiarme con el asistente <span>↗</span></a>
+          <details class="help-details"><summary>Ver todos los pasos</summary><ol><li>Comprueba si falla un solo sitio o todas las aplicaciones. Prueba una segunda página conocida.</li><li>Revisa si otros dispositivos conectados a la misma red también tienen el problema.</li><li>En tu equipo, desactiva el modo avión y vuelve a conectar el Wi-Fi. Comprueba que seleccionaste la red correcta.</li><li>Reinicia el equipo y espera a que vuelva a conectarse.</li><li>Si varios dispositivos fallan, desconecta el router de la corriente durante 30 segundos y vuelve a conectarlo. Espera unos minutos a que estabilice.</li><li>Comprueba las luces del router y consulta con tu proveedor si hay una interrupción del servicio.</li><li>Si solo falla un equipo, olvida la red y vuelve a conectarte únicamente si conoces la contraseña. En un computador de trabajo, consulta a TI antes de cambiar configuraciones.</li><li>Si persiste, anota el mensaje de error, cuándo empezó y qué dispositivos están afectados para pedir ayuda.</li></ol><p class="help-warning">No restaures el router a valores de fábrica ni cambies configuraciones avanzadas sin conocer los datos de conexión.</p></details>
+        </article>
+        <article class="help-card"><div class="help-card-top"><span class="help-icon">⌁</span><span>GUÍA 03</span></div><h3>Computador lento o programa que falla</h3><p>Equipo que se pega, aplicaciones que no abren o poco espacio.</p><a class="help-start" href="#asistente-ti" data-guide="equipo">Guiarme con el asistente <span>↗</span></a>
+          <details class="help-details"><summary>Ver todos los pasos</summary><ol><li>Guarda tu trabajo y cierra aplicaciones que no estés usando.</li><li>Reinicia el computador y comprueba si mejora. No lo hagas si hay una actualización en curso.</li><li>Identifica si falla todo el equipo o solo una aplicación. Si es una sola, ciérrala y vuelve a abrirla.</li><li>Comprueba el espacio libre en almacenamiento y elimina solo archivos que reconozcas o mueve archivos personales con respaldo.</li><li>Instala actualizaciones pendientes desde la configuración del sistema y actualiza la aplicación desde su fuente oficial.</li><li>Ejecuta un análisis con la herramienta de seguridad integrada y actualizada del sistema.</li><li>Si el equipo se calienta mucho, hace ruidos inusuales, muestra ventanas sospechosas o aparece una alerta de cifrado, detente y solicita ayuda.</li><li>Si no mejora, registra el modelo del equipo, sistema operativo, aplicación afectada y el mensaje exacto del error.</li></ol><p class="help-warning">Evita “optimizadores” desconocidos, limpiadores de registro y descargas de sitios no oficiales. No desactives el antivirus para intentar arreglar una aplicación.</p></details>
+        </article>
+      </div>
+
+      <div class="guide-assistant" id="asistente-ti">
+        <div class="assistant-head"><div class="assistant-avatar">D<span>/</span></div><div><div class="section-kicker">DETECTIK / ASISTENTE</div><h3>Vamos a diagnosticarlo juntos.</h3><p>Un paso a la vez. Tú decides cuándo avanzar.</p></div><span class="assistant-status"><i></i> EN LÍNEA</span></div>
+        <div class="assistant-body"><div class="assistant-progress"><span id="guide-progress-label">ELIGE UNA GUÍA</span><div class="progress-track"><span id="guide-progress"></span></div></div>
+          <div id="guide-chat" class="guide-chat" aria-live="polite"><div class="chat-bubble assistant-bubble">Hola. Soy el asistente de ayuda de Detectik. ¿Qué problema quieres resolver hoy?</div></div>
+          <div id="guide-options" class="guide-options"><button type="button" class="guide-option" data-start-guide="cuentas">🔐 Acceso y cuentas</button><button type="button" class="guide-option" data-start-guide="internet">⌁ Internet y Wi-Fi</button><button type="button" class="guide-option" data-start-guide="equipo">▣ Equipo lento o software</button></div>
+          <div id="guide-actions" class="guide-actions" hidden><button type="button" class="button button-primary" id="guide-solved">✓ Ya se resolvió</button><button type="button" class="button button-outline" id="guide-next">Sigue igual →</button></div>
+          <p class="assistant-note" id="guide-note">El asistente funciona en tu navegador. No envía tus respuestas ni guarda información.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="plans section-wrap" id="planes">
-      <div class="section-heading"><div><div class="section-kicker">03 / FORMAS DE TRABAJAR</div><h2>Un punto de partida.<br><span>Un plan a tu medida.</span></h2></div><p>Paquetes orientativos que se ajustan al alcance, la urgencia y la complejidad de cada proyecto.</p></div>
+      <div class="section-heading"><div><div class="section-kicker">04 / FORMAS DE TRABAJAR</div><h2>Un punto de partida.<br><span>Un plan a tu medida.</span></h2></div><p>Paquetes orientativos que se ajustan al alcance, la urgencia y la complejidad de cada proyecto.</p></div>
       <div class="plan-grid">
         <article class="plan-card"><div class="plan-top"><span class="plan-label">01 / FUNDACIÓN</span><span class="plan-symbol">↗</span></div><h3>Presencia Digital</h3><p class="plan-desc">Para profesionales y organizaciones que necesitan presentarse bien en internet.</p><div class="plan-price">Cotización <span>según alcance</span></div><div class="plan-rule"></div><ul><li>Sitio web responsive</li><li>Secciones y formulario de contacto</li><li>Configuración SEO inicial</li><li>Publicación y orientación de uso</li></ul><a class="button button-outline" href="#contacto" data-package="Presencia Digital">Quiero este plan <span>↗</span></a></article>
         <article class="plan-card plan-featured"><div class="featured-tag">MÁS FLEXIBLE</div><div class="plan-top"><span class="plan-label">02 / OPERACIÓN</span><span class="plan-symbol">⌘</span></div><h3>Plataforma a Medida</h3><p class="plan-desc">Para convertir un proceso manual en una herramienta digital ordenada.</p><div class="plan-price">Cotización <span>según alcance</span></div><div class="plan-rule"></div><ul><li>Levantamiento y prototipo</li><li>Flujos, formularios o paneles</li><li>Roles y gestión de información</li><li>Plan de evolución por etapas</li></ul><a class="button button-primary" href="#contacto" data-package="Plataforma a Medida">Diseñar mi plataforma <span>↗</span></a></article>
@@ -73,7 +99,7 @@
     </section>
 
     <section class="method section-wrap" id="metodo">
-      <div class="method-heading"><div class="section-kicker">04 / MÉTODO</div><h2>Pequeños pasos.<br><span>Resultados que escalan.</span></h2><p>Una estructura clara para avanzar sin perder el control del proyecto.</p></div>
+      <div class="method-heading"><div class="section-kicker">05 / MÉTODO</div><h2>Pequeños pasos.<br><span>Resultados que escalan.</span></h2><p>Una estructura clara para avanzar sin perder el control del proyecto.</p></div>
       <div class="steps">
         <div class="step"><span>01</span><div><h3>Escuchar</h3><p>Entendemos el contexto, los usuarios y el resultado que necesitas.</p></div></div>
         <div class="step"><span>02</span><div><h3>Diseñar</h3><p>Definimos alcance, prioridades, riesgos y una primera versión viable.</p></div></div>
@@ -87,7 +113,7 @@
     </section>
 
     <section class="contact section-wrap" id="contacto">
-      <div class="contact-copy"><div class="section-kicker">05 / CONTACTO</div><h2>Cuéntame qué<br><span>necesitas resolver.</span></h2><p>La primera conversación sirve para ordenar la idea, identificar prioridades y ver si Detectik es el aliado correcto.</p><div class="contact-note"><span class="status-dot"></span><span>Atención directa · Proyectos a medida</span></div></div>
+      <div class="contact-copy"><div class="section-kicker">06 / CONTACTO</div><h2>Cuéntame qué<br><span>necesitas resolver.</span></h2><p>La primera conversación sirve para ordenar la idea, identificar prioridades y ver si Detectik es el aliado correcto.</p><div class="contact-note"><span class="status-dot"></span><span>Atención directa · Proyectos a medida</span></div></div>
       <form id="contact-form" class="contact-form">
         <label for="name">Tu nombre</label><input id="name" name="name" autocomplete="name" placeholder="¿Cómo te llamas?" required>
         <label for="email">Correo de contacto</label><input id="email" name="email" type="email" autocomplete="email" placeholder="tu@empresa.cl" required>

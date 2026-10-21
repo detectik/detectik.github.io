@@ -1,7 +1,7 @@
 # DOCUMENTO MAESTRO — PROYECTO WEB DETECTIK
-**Versión:** 1.0  
+**Versión:** 1.1  
 **Fecha:** 2026-10-21  
-**Estado:** Fase 1 — sitio institucional inicial implementado  
+**Estado:** Fase 2 — sitio institucional + centro de ayuda TI guiado  
 **Idioma principal:** Español  
 **Marca:** Detectik
 
@@ -44,8 +44,9 @@ Crear el centro digital de una empresa tecnológica operada inicialmente por una
 4. Paquetes orientativos.
 5. Método de trabajo.
 6. CTA.
-7. Formulario de contacto.
-8. Footer.
+7. Centro de ayuda TI con tres guías detalladas y asistente guiado local.
+8. Formulario de contacto.
+9. Footer.
 
 ## 7. Paquetes iniciales
 ### Presencia Digital
@@ -59,7 +60,7 @@ Los valores no se inventan: se cotizan según alcance, complejidad, plazos y dep
 ## 8. Arquitectura y mantenimiento
 - `index.html`: estructura y contenido.
 - `styles.css`: sistema visual y responsive.
-- `app.js`: menú móvil, año dinámico, preselección de servicios y preparación de correo.
+- `app.js`: menú móvil, año dinámico, preselección de servicios, preparación de correo y asistente de diagnóstico local (sin IA, backend ni almacenamiento).
 - `assets/`: logos e icono.
 - `README.md`: guía de ejecución y publicación.
 - Sin framework, base de datos ni compilación en esta fase.
@@ -76,7 +77,10 @@ El formulario utiliza `mailto:` y no transmite datos a un servidor. En `app.js`,
 - SEO básico, metadatos y favicon.
 - Archivos editables y documento maestro.
 
-### Fase 2 — Conversión y confianza
+### Fase 2 — Conversión y confianza (parcialmente implementada)
+- Centro de ayuda público con guías de acceso/cuentas, conectividad y rendimiento de equipos.
+- Asistente guiado por pasos con controles “resuelto” / “sigue igual”; se ejecuta íntegramente en el navegador.
+- Pendiente: validar las guías con usuarios reales y añadir métricas agregadas solo si se definen privacidad y consentimiento.
 - Incorporar casos reales autorizados, capturas de aplicaciones y testimonios verificables.
 - Añadir enlaces oficiales a Google Play, LinkedIn y canales de contacto.
 - Configurar dominio, correo corporativo, HTTPS y Search Console.
@@ -131,3 +135,4 @@ El formulario utiliza `mailto:` y no transmite datos a un servidor. En `app.js`,
 
 ## 14. Registro de cambios
 - **2026-10-21 / v1.0:** primera landing responsive, seis áreas de servicio, tres paquetes orientativos, formulario `mailto:`, recursos de marca y documentación de continuidad.
+- **2026-10-21 / v1.1:** nueva sección “Centro de ayuda” con tres guías paso a paso y asistente interactivo local; navegación actualizada; se mantienen HTML/CSS/JS nativos y no se recopilan respuestas.

@@ -14,6 +14,9 @@ Abre `index.html` en el navegador. Para desarrollo, puedes usar la extensión Li
 6. Configura dominio, HTTPS, analítica respetuosa de privacidad si se necesita, y correo corporativo.
 7. Prueba móvil, teclado, formulario y enlaces antes de anunciar el sitio.
 
+## Centro de ayuda TI
+La sección `#guias-ti` incluye tres guías de solución de problemas y un asistente guiado en `app.js`. Funciona en el navegador, sin IA, backend, cuentas ni almacenamiento. Los pasos están diseñados para usuarios generales y evitan instrucciones destructivas (por ejemplo, restablecer el router de fábrica).
+
 ## Escalabilidad
 - Contenido separado de estilos y comportamiento (`index.html`, `styles.css`, `app.js`).
 - Para agregar un servicio, duplica una tarjeta `.service-card` en `index.html`.
