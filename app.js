@@ -1,7 +1,7 @@
 /* Detectik: personaliza estos datos antes de publicar. */
 const DETECTIK = {
-  contactEmail: "detectikspa+page@gmail.com",
-  whatsappNumber: "56958989422", // Formato internacional, solo números. Ej.: 56912345678
+  contactEmail: "detectikspa@gmail.com",
+  whatsappNumber: "", // Formato internacional, solo números. Ej.: 56912345678
 };
 
 const menuButton = document.querySelector(".menu-toggle");
@@ -33,22 +33,19 @@ document.querySelectorAll("[data-service], [data-package]").forEach(link => {
 document.querySelector("#contact-form").addEventListener("submit", event => {
   event.preventDefault();
   const data = new FormData(event.currentTarget);
-  
-  const subject = encodeURIComponent(`Consulta desde DETECTIK— ${data.get("interest")}`);
-  const body = encodeURIComponent(`Nombre: ${data.get("name")}\nCorreo: ${data.get("email")}\nInterés: ${data.get("interest")}\n\nMensaje:\n${data.get("message") || "(Sin mensaje adicional)"}`);
+  const subject = encodeURIComponent(`Consulta desde Detectik — ${data.get("interest")}`);
+  const body = encodeURIComponent(
+    `Nombre: ${data.get("name")}\\nCorreo: ${data.get("email")}\\nInterés: ${data.get("interest")}\\n\\nMensaje:\\n${data.get("message") || "(Sin mensaje adicional)"}`
+  );
   const help = document.querySelector("#form-help");
-  
   if (DETECTIK.contactEmail.includes("tudominio") || !DETECTIK.contactEmail) {
-    help.textContent = 'Antes de publicar, configura contactEmail en app.js con el correo real de "empresa".';
+    help.textContent = "Antes de publicar, configura contactEmail en app.js con el correo real de Detectik.";
     return;
   }
-  help.textContent = "Se abrirá tu cuenta de Gmail. Revisa el destinatario y envía el mensaje desde allí.";
-  const urlGmail = `https://google.com{DETECTIK.contactEmail}&su=${subject}&body=${body}`;
-  
-  window.open(urlGmail, '_blank');
+  help.textContent = "Se abrirá tu aplicación de correo. Revisa el destinatario y envía el mensaje desde allí.";
+  window.location.href = `mailto:${DETECTIK.contactEmail}?subject=${subject}&body=${body}`;
 });
 
-  
 // Asistente guiado local: no envía ni almacena respuestas del visitante.
 const guideSteps = {
   cuentas: [
