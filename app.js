@@ -43,7 +43,7 @@ document.querySelector("#contact-form").addEventListener("submit", event => {
     return;
   }
   help.textContent = "Se abrirá tu aplicación de correo. Revisa el destinatario y envía el mensaje desde allí.";
-  window.location.href = `mailto:${DETECTIK.contactEmail}?subject=${subject}&body=${body}`;
+  window.location.href = `https://google.com{nombredominio.contactEmail}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
 // Asistente guiado local: no envía ni almacena respuestas del visitante.
