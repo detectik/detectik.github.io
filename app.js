@@ -33,23 +33,21 @@ document.querySelectorAll("[data-service], [data-package]").forEach(link => {
 document.querySelector("#contact-form").addEventListener("submit", event => {
   event.preventDefault();
   const data = new FormData(event.currentTarget);
-
+  
   const subject = encodeURIComponent(`Consulta desde DETECTIK— ${data.get("interest")}`);
-  const body = encodeURIComponent(
-	`Nombre: ${data.get("name")}
-	Correo: ${data.get("email")}
-	Interés: ${data.get("interest")}
-	Mensaje:
-	${data.get("message") || "(Sin mensaje adicional)"}`
-  );
-    const help = document.querySelector("#form-help");
+  const body = encodeURIComponent(`Nombre: ${data.get("name")}\nCorreo: ${data.get("email")}\nInterés: ${data.get("interest")}\n\nMensaje:\n${data.get("message") || "(Sin mensaje adicional)"}`);
+  const help = document.querySelector("#form-help");
+  
   if (DETECTIK.contactEmail.includes("tudominio") || !DETECTIK.contactEmail) {
     help.textContent = 'Antes de publicar, configura contactEmail en app.js con el correo real de "empresa".';
     return;
   }
-   help.textContent = "Se abrirá tu cuenta de correo. Revisa el destinatario y envía el mensaje desde allí.";
+  help.textContent = "Se abrirá tu cuenta de Gmail. Revisa el destinatario y envía el mensaje desde allí.";
   const urlGmail = `https://google.com{DETECTIK.contactEmail}&su=${subject}&body=${body}`;
-    window.open(urlGmail, '_blank');
+  
+  window.open(urlGmail, '_blank');
+});
+
   
 // Asistente guiado local: no envía ni almacena respuestas del visitante.
 const guideSteps = {
