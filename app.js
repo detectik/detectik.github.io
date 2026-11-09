@@ -1,7 +1,7 @@
 /* Detectik: personaliza estos datos antes de publicar. */
 const DETECTIK = {
-  contactEmail: "contacto@detectik.cl",
-  whatsappNumber: "", // Formato internacional, solo números. Ej.: 56912345678
+  contactEmail: "detectikspa+page@gmail.com",
+  whatsappNumber: "+56958989422", // Formato internacional, solo números. Ej.: 56912345678
 };
 
 const menuButton = document.querySelector(".menu-toggle");
